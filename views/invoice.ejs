@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coniah  systems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha512-t4GWSVZO1eC8BM339Xd7Uphw5s17a86tIZIj8qRxhnKub6WoyhnrxeCIMeAqBPgdZGlCcG2PrZjMc+Wr78+5Xg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.datatables.net/v/bs4/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+</head>
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+            
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'poppins', sans-serif;
+        }
+
+        .containerr {
+            background-color: green;
+            overflow: hidden;
+            margin: 10px;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            left: 0;
+      
+
+
+        }
+
+        .containerr a {
+            display: flexbox;
+            padding: 10px;
+            padding-top: 25px;
+            margin-right:40px;
+            
+
+        }
+
+        .right a {
+            float: left;
+            margin-left: 400px;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+            font-weight: 100;
+        }
+
+        .containerr a:hover,
+        .containerr a.active {
+            color: black;
+        }
+
+        a {
+            float: right;
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+
+        .right {
+            float: left;
+            margin-left: -20%;
+            color: #0000;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+            font-weight: 100;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.0rem;
+            font-weight: 300;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        h5 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #1d1d1d;
+
+        }
+
+        h6 {
+            color: #d8d8d8;
+        }
+        #home {
+            background-image: url("back.jpg");
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: top center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+
+        #home span {
+            color: coral;
+
+        }
+        button {
+            font-size: 0.6rem;
+            font-weight: 700;
+            outline: none;
+            border: none;
+            background-color: #1d1d1d;
+            color: aliceblue;
+            padding: 13px 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+
+        button:hover {
+            background-color: #3a3833;
+
+        }
+
+
+         .root {
+          
+            overflow: hidden;
+            margin: 10px;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            left: 0;
+      
+
+
+        }
+
+        .root h3 {
+            display: flexbox;
+            margin-right:40px;
+            margin-left: 10%;
+            
+
+        }
+
+        .rootryt h4 {
+            float: right;
+            margin-right: 200px;
+            
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+            font-weight: 100;
+        }
+
+
+        .right {
+            float: left;
+            margin-left: -20%;
+            color: #0000;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+            font-weight: 100;
+        }
+
+
+        .bottom {
+            float: right;
+            
+          
+            padding: 2px;
+
+           
+
+
+        }
+
+        .bottom h5 {
+            
+            padding: 2px;
+            margin-right:40px;
+            margin-left: 80%;
+            
+
+        }
+
+       
+
+     
+
+   
+
+
+</style>
+<body>
+    <div class="containerr">
+        <div class="right">
+            <a href="#">Invoice</a>
+        </div>
+        <a href="#"><%= detaildata.name %>'s invoice</a>
+        <a href="#">Home</a>
+        <a href="#" >Coniah systems@gmail.com</a>
+        <a href="#">off Allen <br> Avenue,Ikeja</a>
+        
+        
+    </div>
+    <div class="root">
+         <div class="rootryt">
+            <h4>Amount:  <%= detaildata.amount %> </h4>
+        </div>
+        <h3>Name:  <%=detaildata.name %> </h3>
+        <h3>Phone: <%=detaildata.phone %></h3>
+        
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-lg-12">
+                
+               
+                 
+                <div class="table-responsive">
+                  
+                        <table class="table table-striped text-center my-3">
+                            <thead>
+                                <tr class="table-success">
+                                    
+                                    <th>Description</th>
+                                    <th>Cost</th>
+                                    <th>Quantity</th>
+                                    <th>Amount</th>
+                                   
+                                </tr>
+                            </thead>
+                          
+
+                            <tbody>
+                             
+
+                                
+                               
+                                <tr>
+                                    <td> name</td>
+                                    <td> 1</td>
+                                    <td>1 </td>
+                                    <td> 5000 </td>
+                                </tr>
+                                <tr>
+                                    <td> chain</td>
+                                    <td> 5000</td>
+                                    <td> 1 </td>
+                                    <td> 5000 </td>
+                                </tr>
+                                <tr>
+                                    <td> wristwatch</td>
+                                    <td> 6500</td>
+                                    <td> 1</td>
+                                    <td> 6500 </td>
+                                </tr>
+                                <tr>
+                                    <td> phone</td>
+                                    <td> 3500</td>
+                                    <td> 1</td>
+                                    <td> 3500 </td>
+                                </tr>
+
+                             
+                          
+                        </tbody>
+                   
+                        </table>
+
+
+
+                </div>
+            </div>
+
+            <div class="bottom">
+                
+               <h5> name: <%=detaildata.name %></h5>
+               <h5> phone: <%= detaildata.phone %></h5>
+            
+       
+       
+           </div>
+       
+        </div>
+
+
+   
+
+   
+
+</body>
+
+<script>
+
+var h1 = document.querySelector(".text-uppercase");
+isblue = false;
+iscyan = false;
+
+setInterval(function(){
+    if(isblue) {
+        h1.style.color = "salmon";
+    } else {
+        h1.style.color = "blue";
+    }
+    isblue = !isblue;
+    iscyan = !iscyan;
+}, 1000);
+
+
+</script>
+</html>
