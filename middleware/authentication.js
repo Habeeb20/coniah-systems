@@ -12,7 +12,7 @@ const isLoggedin = (async(req, res) => {
            }
         
         
-    } catch (error) {
+    } catch (error) {np
         console.log(error)
         
     }

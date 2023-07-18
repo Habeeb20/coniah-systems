@@ -54,6 +54,7 @@ const loadadd = (async(req, res) => {
         });
         const detaildata = await details.save();
         if(detaildata){
+            const detaildata = await User.find()
             res.render('profile', {
                 
                 _id: req.params.id,
@@ -80,10 +81,9 @@ const loadadd = (async(req, res) => {
 
 const profile = (async(req, res) => {
     const prof = await User.find();
-    try {
-        
-
-             
+    if(prof.length)
+    console.log(prof)
+    try {             
         res.render('profile', { 
             _id: req.params.id, 
             
@@ -92,9 +92,7 @@ const profile = (async(req, res) => {
             amount:req.body.amount,
 
             detaildata:prof
-
-            
-            
+   
           
          })
             
@@ -289,7 +287,7 @@ const deletePost = (async(req, res) => {
   
     try {
         let id = req.params.id;
-        const delet = await User.findByIdAndRemove(id);
+        const delet = await User.findByIdAndRemove(id.trim());
           
         if(delet) {
             res.redirect('/profile')
@@ -311,6 +309,7 @@ const geteditpost = (async(req,res) => {
         var admindata = await User.findById(id);
         
             res.render('edit',{
+                _id:req.params.id,
             
                 
                 detaildata:admindata
