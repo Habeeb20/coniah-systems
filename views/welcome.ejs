@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +10,22 @@
 
 
 <style>
-    body{
+    body {
         padding: 0;
         margin: 0;
-        background-color:#020412;
+        background-color: #020412;
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-     
-      
-        
+
+
+
     }
 
     .menu ul {
         list-style: none;
-      
+
     }
 
     .menu {
@@ -36,17 +37,17 @@
         transform: translate(-50%, -50%);
     }
 
-    .menu > ul {
+    .menu>ul {
         list-style: none;
         padding: 2px 342px;
         display: inline-block;
-        background:#313131;
-        color:#fff;
+        background: #313131;
+        color: #fff;
     }
 
-    .menu > ul > li {
+    .menu>ul>li {
         position: relative;
-        
+
         cursor: pointer;
         font-family: poppins;
         font-size: 14px;
@@ -57,13 +58,14 @@
         line-height: 50px;
     }
 
-    .dropdown{
+    .dropdown {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         padding: 0;
     }
+
     .dropdown li {
         background: #313131;
         padding: 10px;
@@ -71,70 +73,74 @@
 
     .dropdown li:hover {
         background: #029bd5;
-        
+
 
     }
-    .menu li > .dropdown li {
+
+    .menu li>.dropdown li {
         display: none;
         padding-right: 2px;
-        
+
     }
 
-    .menu li:hover > .dropdown li {
+    .menu li:hover>.dropdown li {
         display: block;
-        transform-origin: top-center ;
+        transform-origin: top-center;
         opacity: 0;
     }
 
-    .menu li:hover > .dropdown {
+    .menu li:hover>.dropdown {
         perspective: 1000px;
     }
 
 
-    .menu li:hover > .dropdown li:nth-child(1) {
+    .menu li:hover>.dropdown li:nth-child(1) {
         animation: animate 300ms ease-in-out forwards;
         animation-delay: -150ms
     }
 
-    .menu li:hover > .dropdown li:nth-child(2) {
+    .menu li:hover>.dropdown li:nth-child(2) {
         animation: animate 300ms ease-in-out forwards;
         animation-delay: 0ms
     }
 
-    .menu li:hover > .dropdown li:nth-child(3) {
+    .menu li:hover>.dropdown li:nth-child(3) {
         animation: animate 300ms ease-in-out forwards;
         animation-delay: 150ms
     }
 
-    .menu li:hover > .dropdown li:nth-child(4) {
+    .menu li:hover>.dropdown li:nth-child(4) {
         animation: animate 300ms ease-in-out forwards;
         animation-delay: 300ms
     }
 
 
     @keyframes animate {
-        0%{
+        0% {
             opacity: 0;
             transform: rotateX(-90deg);
         }
-        50%{
+
+        50% {
             transform: rotateX(20deg);
         }
-        100%{
+
+        100% {
             opacity: 1;
             transform: rotateX(0deg);
         }
-        
+
     }
 
 
-    .dropdown1{
+    .dropdown1 {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         padding: 0;
     }
+
     .dropdown1 li {
         background: #313131;
         padding: 10px;
@@ -142,42 +148,43 @@
 
     .dropdown1 li:hover {
         background: #029bd5;
-        
+
 
     }
-    .menu li > .dropdown1 li {
+
+    .menu li>.dropdown1 li {
         display: none;
-      
-        
+
+
     }
 
-    .menu li:hover > .dropdown1 li {
+    .menu li:hover>.dropdown1 li {
         display: block;
-        transform-origin: top-center ;
+        transform-origin: top-center;
         opacity: 0;
     }
 
-    .menu li:hover > .dropdown1 {
+    .menu li:hover>.dropdown1 {
         perspective: 1000px;
     }
 
 
-    .menu li:hover > .dropdown1 li:nth-child(1) {
+    .menu li:hover>.dropdown1 li:nth-child(1) {
         animation: animate 300ms ease-in-out forwards;
         animation-delay: -150ms
     }
 
-    .menu li:hover > .dropdown1 li:nth-child(2) {
+    .menu li:hover>.dropdown1 li:nth-child(2) {
         animation: animate 300ms ease-in-out forwards;
         animation-delay: 0ms
     }
 
-    .menu li:hover > .dropdown1 li:nth-child(3) {
+    .menu li:hover>.dropdown1 li:nth-child(3) {
         animation: animate 300ms ease-in-out forwards;
         animation-delay: 150ms
     }
 
-    .menu li:hover > .dropdown1 li:nth-child(4) {
+    .menu li:hover>.dropdown1 li:nth-child(4) {
         animation: animate 300ms ease-in-out forwards;
         animation-delay: 300ms
     }
@@ -202,23 +209,23 @@
         color: #fff;
     }
 
-    .text1 .sec-text:before{
+    .text1 .sec-text:before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        background-color:#010718;
+        background-color: #010718;
         border-left: 2px solid #4070f4;
         animation: animate 4s steps(12) infinite;
-    
+
     }
 
 
 
     .text a {
-        
+
         display: inline-block;
         border-radius: 6px;
         border: 2px solid #fff724;
@@ -232,10 +239,10 @@
     .text .btn {
         background: #fff724;
         color: #000;
-        margin-left:30px ;
+        margin-left: 30px;
         font-weight: 600;
         cursor: pointer;
-        
+
     }
 
     .text img {
@@ -245,24 +252,26 @@
     }
 
     .text .img {
-        animation: inbos 10s ;
+        animation: inbos 10s;
         animation-duration: 20s;
     }
 
-    
+
     @keyframes inbos {
-        from{
+        from {
             opacity: 0;
         }
-        
+
         to {
             opacity: 1;
         }
+
         0% {
             right: -10%;
-            
+
         }
-        100%{
+
+        100% {
             right: 0%;
         }
     }
@@ -271,7 +280,7 @@
 
 
 
-    
+
     .containerr {
         background-color: rgb(66, 78, 66);
         overflow: hidden;
@@ -284,7 +293,7 @@
         position: sticky;
         top: 0;
         left: 0;
-  
+
 
 
     }
@@ -293,8 +302,8 @@
         display: flexbox;
         padding: 10px;
         padding-top: 25px;
-        margin-right:40px;
-        
+        margin-right: 40px;
+
 
     }
 
@@ -349,6 +358,7 @@
         font-size: 1.1rem;
         font-weight: 600;
     }
+
     h5 {
         font-size: 1rem;
         font-weight: 400;
@@ -359,6 +369,7 @@
     h6 {
         color: #d8d8d8;
     }
+
     #home {
         background-image: url("back.jpg");
         width: 100%;
@@ -375,65 +386,71 @@
     #home span {
         color: coral;
     }
-
-
-
-
-
-
-
-
-
 </style>
 
 
 <body>
 
-    
 
 
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
 
-    <div class="containerr">
-        <div class="right">
-            <a href="#">Coniah system</a>
-        </div>
-        <a href="#"></a>
-        <a href="#">Home</a>
-        <a href="#" >Coniah systems@gmail.com</a>
-        <a href="#">off Allen <br> Avenue,Ikeja</a>
-        
-        
-    </div>
+            <div class="containerr">
+                <div class="right">
+                    <a href="#">Coniah system</a>
+                </div>
+                <a href="#"></a>
+                <a href="#">Home</a>
+                <a href="#">Coniah systems@gmail.com</a>
+                <a href="#">off Allen <br> Avenue,Ikeja</a>
 
-    <div class="text">
-        <h4 style="color: white; margin-left: 30%;">you have successfully logged in <%= email %></h4>
 
-        <img name="slide"  class="img" width="400" height="200">
-        <a href="">chat us</a>
-        
-            <a href="/add" class="btn">Add name</a>
-
-      
-      
-      
-        
-           
-
-            <div class="text1">
-                <span class="first-text">welcome to</span>
-                <span class="sec-text">Coniah </span>
-    
             </div>
-             
 
-    </div>
+        </div>
+    </nav>
 
-    
 
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto mt-6">
+                <div class="card shadow">
 
-    
+                    <div class="text">
+                        <h4 style="color: white; margin-left: 30%;">you have successfully logged in <%= email %>
+                        </h4>
+
+                        <img name="slide" class="img" width="400" height="200">
+                        <a href="">chat us</a>
+
+                        <a href="/add" class="btn">Add name</a>
+
+
+
+
+
+
+
+                        <div class="text1">
+                            <span class="first-text">welcome to</span>
+                            <span class="sec-text">Coniah </span>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
 </body>
 <script>
     var i = 0;
@@ -446,14 +463,14 @@
     images[2] = 'p5.png';
 
 
-    function changeimg(){
+    function changeimg() {
         document.slide.src = images[i];
 
 
-        if(i < images.length - 1){
+        if (i < images.length - 1) {
             i++;
         } else {
-            i= 0;
+            i = 0;
         }
 
         setTimeout("changeimg()", time);
@@ -465,12 +482,3 @@
 </script>
 
 </html>
-
-
-
-
-
-
-
-
-

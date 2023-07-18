@@ -335,18 +335,7 @@ const loadedit =(async(req, res)=> {
        
          
         if (editdetails){
-            res.render('profile',  { 
-                _id: req.params.id, 
-                
-                name:req.body.name,
-                amount:req.body.amount,
-                phone:req.body.phone,
-    
-                
-                detaildata : editdetails,
-                
-             
-            })
+            res.redirect('/profile')
             console.log('successful')
             
         } else {
